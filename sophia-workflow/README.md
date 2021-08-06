@@ -4,7 +4,11 @@ Here are descriptions for all the (relevant) code files I wrote and used through
 - **journal_scraping**\
   A folder which contains the individual web scraping files I made for the JEB, JSTOR, and Springer journals. This folder might not be useful anymore since the contents of all this web scraping is already updated in ```get_paper_info.py```.
   
+
+- **test_pyautogui**\
+  A folder containing all the code I used in regards to PyAutoGUI this internship.  
   
+
 - **check_duplicates_in_golden_sheet.py**\
   Checks to see if a CSV containing URLs has already been merged into the Golden Sheet. This code could easily be modified to check for DOI or abstract overlaps, as opposed to URLs.
   
