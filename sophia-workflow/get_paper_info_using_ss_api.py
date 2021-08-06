@@ -15,8 +15,8 @@ import time
 # doi_df = doi_df.iloc[1000:1500]  # third 500 rows
 
 
-four_col_df = pd.read_csv('../sophia-data/new_biomimicry_papers.csv')
-doi_df = four_col_df.filter(['doi']).iloc[178:]  # in this scenario, I only wanted to get paper info for rows 178 onward.
+doi_df = pd.read_csv('../sophia-data/press_release_alex_task_files/biomimicry_papers_no_labels_with_dois.csv')
+# doi_df = four_col_df.filter(['doi']).iloc[178:]  # in this scenario, I only wanted to get paper info for rows 178 onward.
 
 # clean DOIs so they have a consistent format
 doi_df['doi'] = doi_df['doi'].str.replace('http://dx.doi.org/', '', regex=True)  # specify regex=True for future updates
@@ -49,5 +49,5 @@ api_df.reset_index(drop=True, inplace=True)
 df_final = pd.concat([doi_df, api_df], axis=1)  # create a dataframe with a doi column + other paper info columns
 df_final['is_biomimicry'] = 'True'  # add column to the end of the df with a constant value of 'True'
 
-df_final.to_csv('../sophia-data/raw_press_release_paper_info.csv')
+df_final.to_csv('../sophia-data/raw_biomimicry_papers_no_labels_info.csv')
 

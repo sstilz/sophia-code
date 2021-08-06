@@ -5,10 +5,14 @@ Here are descriptions for all the (relevant) data files I used throughout my int
   These were the 20 chunks of 500 rows that were produced upon running the commented-out code at the top of ```get_paper_info_using_ss_api.py```.
   
 
+- **press_release_alex_task_files**\
+  This folder contains all the files I used to complete the task I worked on with Alex, where we merged unique press release-derived biomimicry paper to the Golden Sheet. Click on the ```README.md``` file within that folder to see more detailed descriptions of those files.
+  
+
 - **bad_urls.txt**\
   A list of URLs from the Colleen and Alex tab in the AirTable that we had trouble scraping the DOIs from using Jerry's method of looking for ```'doi'``` inside of HTML ```href``` tags. This was the file I used to test how well the PyAutoGUI method worked.
   
-  
+
 - **cleaned_jeb_data.csv**\
   Contains paper info for the 600-something JEB articles that we used as HITs for our binary labeling MTurk task. This was the result of running ```get_jeb_paper_info_for_mturk.py```.
   Note: the ```api_title``` column contains the true ```title``` values for the papers, while the ```api_abstract_cleaned``` column contains the true ```abstract``` values for the papers.
@@ -22,10 +26,6 @@ Here are descriptions for all the (relevant) data files I used throughout my int
   Contains paper info for the papers in ```new_biomimicry_papers.csv``` (file described below), starting line 180. Columns include ```doi```, ```url```, ```title```, ```abstract```, ```is_open_access```, ```journal_name```, and ```is_biomimicry```.
   
 
-- **content_to_be_added.csv**\
-  A file given to me from Alex containing additional press release papers and the scientific papers that the press release papers refer to. In one of Alex's tasks, she asked me to see if there were any papers in ```content_to_be_added.csv``` that weren't already included in ```new_biomimicry_papers.csv```. This way we could filter out unique press release papers to add to the Golden Sheet.
-  
-
 - **negative_paper_dois.csv**\
   Given a CSV file with DOIs, use the Semantic Scholar API to get the URL, title, abstract, is_open_access status, and journal name of a paper.
   
@@ -33,10 +33,6 @@ Here are descriptions for all the (relevant) data files I used throughout my int
 - **new_biomimicry_papers.csv**\
   Contains 300 or so new biomimicry papers from press releases. In rows 180-307, Alex and I manually obtained the URL to the published biomimicry paper which the press release was referring to, as well as the DOI for that published biomimicry paper. 
   
-
-- **no_labels.csv**\
-  Contains all the rows in the current Golden Sheet that don't have labels.  
-
 
 - **raw_jeb_paper_info.csv**\
   Contains the paper info CSV of ~10,000 JEB papers that Alex sent me to-be-posted on MTurk. After fixing some of the metacharacter problems in the title/abstract, long PubMed IDs, etc, the cleaned result of this file (for the first 600 rows) was exported as ```cleaned_jeb_data.csv``` (see description of that file above).

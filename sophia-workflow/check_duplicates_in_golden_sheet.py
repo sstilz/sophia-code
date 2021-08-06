@@ -7,7 +7,7 @@ import pandas as pd
 
 
 def convert_to_csv():
-	fat_df = pd.read_csv("../sophia-data/no_labels.csv")
+	fat_df = pd.read_csv("../sophia-data/press_release_alex_task_files/no_labels.csv")
 	skinny_df = pd.read_csv("../sophia-data/new_biomimicry_papers.csv")
 	
 	fat_urls = set(fat_df['url'].tolist())
