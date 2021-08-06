@@ -1,7 +1,7 @@
 """
 This code deals with some of the tasks Alex needed help with on 8/5/21.
-Find the list of press release
 """
+
 import pandas as pd
 
 # 1. read new_biomimicry_papers.csv and select/rename appropriate columns
@@ -48,10 +48,7 @@ master_merged_urls_2 = set(master_merged_df['paper_url'].tolist())
 content_to_be_added_urls_2 = set(content_to_be_added_df['paper_url'].tolist())
 unique_urls_2 = list(content_to_be_added_urls_2 - master_merged_urls_2)  # a list of the overlapping urls
 
-# master_merged_urls = set(master_merged_df['press_release_url'].tolist())
-# content_to_be_added_urls = set(content_to_be_added_df['press_release_url'].tolist())
-# unique_urls = list(content_to_be_added_urls - master_merged_urls)  # a list of the overlapping urls
-
+# 6. print out the results!
 for url in unique_urls_1:
 	print(f'{url}')
 	# print('row:', content_to_be_added_df.loc[content_to_be_added_df['press_release_url'] == url])

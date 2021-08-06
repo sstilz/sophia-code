@@ -49,5 +49,5 @@ api_df.reset_index(drop=True, inplace=True)
 df_final = pd.concat([doi_df, api_df], axis=1)  # create a dataframe with a doi column + other paper info columns
 df_final['is_biomimicry'] = 'True'  # add column to the end of the df with a constant value of 'True'
 
-df_final.to_csv('raw_press_release_paper_info.csv')
+df_final.to_csv('../sophia-data/raw_press_release_paper_info.csv')
 

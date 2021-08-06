@@ -1,5 +1,6 @@
 """
-Per Alex's request, see if the press release papers in new_biomimicry_papers are already in the Golden Sheet or not.
+Per Alex's request, see if the press release papers in new_biomimicry_papers.csv are within the
+unlabeled papers (no_labels.csv) of the Golden Sheet or not.
 """
 
 import pandas as pd

@@ -19,7 +19,7 @@ def expire_hit():
     now = datetime.now()
     timestamp = datetime.timestamp(now)
     
-    with open('500_jeb_hits.csv') as csvfile:
+    with open('500_jeb_hits.csv') as csvfile:  # modify this file name to whatever contains the list of MTurk HITs
         reader = csv.reader(csvfile)
         for i, row in enumerate(reader):
             hit_id, url = row

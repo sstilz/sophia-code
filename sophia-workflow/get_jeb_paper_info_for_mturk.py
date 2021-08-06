@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 
 # TODO - read input CSV & delete index column
-df = pd.read_csv('jeb_paper_info.csv', index_col=0)
+df = pd.read_csv('../sophia-data/raw_jeb_paper_info.csv', index_col=0)
 df = df.sample(700)  # run 700 out of the 10,000 rows so that there will safely be 500 ready-to-be-posted HITs
 
 # TODO - remove the 'http://dx.doi.org' from all DOI links
