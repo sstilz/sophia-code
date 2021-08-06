@@ -2,7 +2,7 @@
 Here are descriptions for the code files within the test_pyautogui directory.
 
 - **bad_urls.py**\
-  This is a Python list of 'bad_urls.txt', so that it is easy to make comments on which links are PDFs, which links shouldn't be tested with the PyAutoGUI method, etc. The list is returned within a function so that this list can be accessed from other files through imports.
+  This is a Python list of ```bad_urls.txt```, so that it is easy to make comments on which links are PDFs, which links shouldn't be tested with the PyAutoGUI method, etc. The list is returned within a function so that this list can be accessed from other files through imports.
 
 
 - **bad_urls.txt**\
