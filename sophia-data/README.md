@@ -9,6 +9,10 @@ Here are descriptions for all the (relevant) data files I used throughout my int
   This folder contains all the files I used to complete the task I worked on with Alex, where we merged unique press release-derived biomimicry paper to the Golden Sheet. Click on the ```README.md``` file within that folder to see more detailed descriptions of those files.
   
 
+- **50_jeb_hits**\
+  Contains the HIT ID and URL to the most recent batch of 50 MTurk HITs.  
+
+
 - **cleaned_jeb_data.csv**\
   Contains paper info for the 600-something JEB articles that we used as HITs for our binary labeling MTurk task. This was the result of running ```get_jeb_paper_info_for_mturk.py```.
   Note: the ```api_title``` column contains the true ```title``` values for the papers, while the ```api_abstract_cleaned``` column contains the true ```abstract``` values for the papers.

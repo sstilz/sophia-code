@@ -42,7 +42,7 @@ Here are descriptions for all the (relevant) code files I wrote and used through
   
 
 - **mturk_hit_utilities.py**\
-  Contains useful functions to perform on MTurk HITs within ```mturk-manage```. Currently, there is code to expire and delete HITs.
+  Contains useful functions to perform on MTurk HITs within ```mturk-manage```. Currently, there is code to change the expiration date of a HIT as well as code to delete a HIT.
 
 
 - **press_release_alex_task.py**\
